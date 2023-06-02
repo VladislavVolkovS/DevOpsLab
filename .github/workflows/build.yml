@@ -1,4 +1,4 @@
-name: Test_web_app
+name: Test_calc
 
 on:
   push:
@@ -33,6 +33,6 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
         with:
-          name: artifact
+          name: latest_v
           path: calc/**
           retention-days: 90

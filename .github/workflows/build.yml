@@ -35,4 +35,10 @@ jobs:
         with:
           name: latest_v
           path: calc/**
-          retention-days: 90
+          retention-days: 30
+      - name: Telegram Send Last Version
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.ID_CHAT }}
+          token: ${{ secrets.CHAT_TOKEN }}
+          document: latest_v

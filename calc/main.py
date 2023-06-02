@@ -12,17 +12,17 @@ print("Введите операцию")
 
 operation = str(input())
 
-if str == "+":
+if operation == "+":
     print(summ(a, b))
 
-if str == "-":
+if operation == "-":
     print(summ(a, -b))
 
-if str == "*":
+if operation == "*":
     print(multyply(a, b))
     
-if str == "/":
+if operation == "/":
     print(divide(a, b))
 
-if str == "^":
+if operation == "^":
     print(pow(a, b))

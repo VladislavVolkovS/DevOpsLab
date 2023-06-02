@@ -1,4 +1,4 @@
-from functions import *
+from calc.functions import *
 
 
 def test_add():

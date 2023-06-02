@@ -1,4 +1,4 @@
-from main import *
+from functions import *
 
 
 def test_add():
@@ -10,8 +10,8 @@ def test_mul():
 
 
 def test_div():
-    assert summ(6, 3) == 2
+    assert divide(6, 3) == 2
 
 
 def test_pow():
-    assert summ(2, 3) == 8
+    assert pow(2, 3) == 8

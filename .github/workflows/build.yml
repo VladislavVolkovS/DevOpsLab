@@ -2,9 +2,9 @@ name: Test_web_app
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "master" ]
   schedule:
    - cron: "0 0/12 * * *"
   workflow_dispatch:

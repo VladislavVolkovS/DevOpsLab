@@ -34,7 +34,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: latest_v
-          path: calc/latest_v.zip
+          path: calc/**
           retention-days: 30
       - name: Download artifact
         uses: actions/download-artifact@v3

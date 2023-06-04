@@ -45,4 +45,4 @@ jobs:
         with:
           to: ${{ secrets.ID_CHAT }}
           token: ${{ secrets.CHAT_TOKEN }}
-          message_file: "./home/runner/work/DevOpsLab/DevOpsLab/latest_v.zip"
+          message_file: "/home/runner/work/DevOpsLab/DevOpsLab/latest_v.zip"

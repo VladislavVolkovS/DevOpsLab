@@ -48,4 +48,4 @@ jobs:
         with:
           to: ${{ secrets.ID_CHAT }}
           token: ${{ secrets.CHAT_TOKEN }}
-          document: calc.zip
+          document: /home/runner/work/DevOpsLab/DevOpsLab/calc.zip

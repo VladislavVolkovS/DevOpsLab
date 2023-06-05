@@ -43,6 +43,8 @@ jobs:
           name: tests
       - name: ls 
         run: ls -la
+      - name: ls 
+        run: ls -la
       - name: Telegram Send Last Version
         uses: appleboy/telegram-action@master
         with:

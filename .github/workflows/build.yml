@@ -14,8 +14,6 @@ jobs:
 
     runs-on: ubuntu-latest
     timeout-minutes: 60
-    env:
-      app_name: test_calc.py
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python 3.9
@@ -34,13 +32,13 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
         with:
-          name: calc
+          name: latest
           path: calc/**
           retention-days: 30
       - uses: actions/checkout@v3
       - uses: actions/download-artifact@v3
         with:
-          name: calc
+          name: latest
       - name: ls 
         run: ls -la
       - name: Telegram Send Last Version
@@ -48,4 +46,4 @@ jobs:
         with:
           to: ${{ secrets.ID_CHAT }}
           token: ${{ secrets.CHAT_TOKEN }}
-          document: /home/runner/work/DevOpsLab/DevOpsLab/calc.zip
+          document: /home/runner/work/DevOpsLab/DevOpsLab/latest.zip

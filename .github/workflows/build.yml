@@ -48,4 +48,4 @@ jobs:
         with:
           to: ${{ secrets.ID_CHAT }}
           token: ${{ secrets.CHAT_TOKEN }}
-          document: tests
+          document: tests.zip

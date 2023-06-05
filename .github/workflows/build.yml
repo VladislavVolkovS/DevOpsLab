@@ -34,7 +34,7 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
         with:
-          name: tests
+          name: calc
           path: calc/**
           retention-days: 30
       - uses: actions/checkout@v3
@@ -43,11 +43,9 @@ jobs:
           name: tests
       - name: ls 
         run: ls -la
-      - name: ls 
-        run: ls -la
       - name: Telegram Send Last Version
         uses: appleboy/telegram-action@master
         with:
           to: ${{ secrets.ID_CHAT }}
           token: ${{ secrets.CHAT_TOKEN }}
-          document: tests.zip
+          document: calc

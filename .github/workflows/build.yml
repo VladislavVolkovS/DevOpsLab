@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 60
     env:
-      app_name: latest_v
+      app_name: test_calc.py
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python 3.9
@@ -34,7 +34,7 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
         with:
-          name: latest_v
+          name: tests
           path: calc/**
           retention-days: 30
       - uses: actions/checkout@v3
@@ -46,4 +46,4 @@ jobs:
         with:
           to: ${{ secrets.ID_CHAT }}
           token: ${{ secrets.CHAT_TOKEN }}
-          document: "./latest_v"
+          document: test_calc.py

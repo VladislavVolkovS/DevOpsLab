@@ -38,8 +38,8 @@ jobs:
           retention-days: 30
       - uses: actions/checkout@v3
       - uses: actions/download-artifact@v3
-      - name: Display structure of downloaded files
-        run: ls -R
+      - name: ls 
+        run: ls -la
       - name: Telegram Send Last Version
         uses: appleboy/telegram-action@master
         with:

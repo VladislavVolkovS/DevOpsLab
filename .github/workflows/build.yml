@@ -39,6 +39,8 @@ jobs:
           retention-days: 30
       - uses: actions/checkout@v3
       - uses: actions/download-artifact@v3
+        with:
+          name: tests
       - name: ls 
         run: ls -la
       - name: Telegram Send Last Version
@@ -46,4 +48,4 @@ jobs:
         with:
           to: ${{ secrets.ID_CHAT }}
           token: ${{ secrets.CHAT_TOKEN }}
-          document: calc/functions.py
+          document: tests

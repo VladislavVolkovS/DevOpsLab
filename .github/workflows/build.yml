@@ -40,7 +40,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/download-artifact@v3
         with:
-          name: tests
+          name: calc
       - name: ls 
         run: ls -la
       - name: Telegram Send Last Version

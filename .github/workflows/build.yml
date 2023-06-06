@@ -53,4 +53,4 @@ jobs:
         with:
           to: ${{ secrets.ID_CHAT }}
           token: ${{ secrets.CHAT_TOKEN }}
-          document: latest.zip
+          document: calc.zip
